@@ -16,7 +16,7 @@ I've created a food application that has 2 different sections. One section will 
 
 ## Entity Relationship Diagram
 
-![](DiagramsIMG/FoodDiariesERDChart.png)
+![](DiagramsIMG/FoodDiariesERDChartt.png)
 
 ## Trello Link
 
