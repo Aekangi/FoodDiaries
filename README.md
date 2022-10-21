@@ -1,10 +1,8 @@
 # Food Diaries
 
-### Social Media
-
-[Facebook](http://www.facebo.com)
+[Facebook](http://www.instaa.com)
 [Instagram](http://www.instaa.com)
-[Twitter](http://www.twitt.com)
+[Twitter](http://www.instaa.com)
 
 ## Description
 
@@ -21,3 +19,23 @@ I've created a food application that has 2 different sections. One section will 
 ## Trello Link
 
 [Food Diaries Status](https://trello.com/invite/b/2Vfdtfja/ATTI35adf591a08c0404513406dc21ea80b7A5365C28/food-diaries)
+
+#### Credits
+
+###### [Creamy Baked Mac and Cheese](https://www.thechunkychef.com/family-favorite-baked-mac-and-cheese/#wprm-recipe-container-9151)
+
+###### [Steak Fajitas](https://cooking.nytimes.com/recipes/1018078-steak-fajitas)
+
+###### [Stuffed Shells](https://www.allrecipes.com/recipe/21532/stuffed-shells-iii/)
+
+###### [Fried Rice](https://www.allrecipes.com/recipe/79543/fried-rice-restaurant-style/)
+
+###### [Indian Chicken Curry (Murgh Kari)](https://www.allrecipes.com/recipe/212721/indian-chicken-curry-murgh-kari/)
+
+###### [Creamy Chicken Chimichanga](https://tasty.co/recipe/creamy-chicken-chimichanga)
+
+###### [Pizza Margherita](https://cooking.nytimes.com/recipes/1016231-pizza-margherita)
+
+###### [Veggie Lo Mein](https://momsdish.com/veggie-lo-mein)
+
+###### [Seafood and Chicken Paella with Chorizo](https://www.foodandwine.com/recipes/seafood-and-chicken-paella-chorizo)
