@@ -1,7 +1,8 @@
 const db = require('../db')
-const food = require('../models/food')
+const Food = require('../models/food')
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 const main = async () => {
+  Food.collection.drop()
   const foods = [
     {
       name: 'Creamy Baked Mac and Cheese',
@@ -112,7 +113,7 @@ const main = async () => {
         'https://www.foodandwine.com/recipes/seafood-and-chicken-paella-chorizo'
     }
   ]
-  await food.insertMany(foods)
+  await Food.insertMany(foods)
   console.log('Created some food entries!')
 }
 const run = async () => {
