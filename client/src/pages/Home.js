@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <div>
+      <h1>Food Diaries</h1>
       <h1>
-        Food Diaries
         <button>
           <Link to="/fd/foods">Food</Link>
         </button>

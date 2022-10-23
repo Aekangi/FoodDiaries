@@ -78,7 +78,7 @@ const main = async () => {
     },
     {
       name: 'Pizza Margherita',
-      difficulty_Level: 'Difficulty Level: Medium',
+      difficulty_Level: 'Difficulty Level: Easy',
       time: '15 minutes, plus 1 hour to heat oven',
       servings: '2 servings',
       ingredients:
@@ -90,7 +90,7 @@ const main = async () => {
     },
     {
       name: 'Veggie Lo Mein',
-      difficulty_Level: 'Difficulty Level: Easy',
+      difficulty_Level: 'Difficulty Level: Medium',
       time: '25 mins',
       servings: '8 servings',
       ingredients:

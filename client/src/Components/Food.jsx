@@ -2,22 +2,22 @@
 
 const Food = (props) => {
     return (
-      <div className="card" onClick={props.onClick}>
+    <div className="card" onClick={props.onClick}>
         <div className="img-wrapper">
-        <image src={props.image} alt=''/>
+        <img src={props.image} />
         </div>
         <div className="info-wrapper flex-col">
-          <h2>{props.name}</h2>
-          <p>
-            {props.difficulty_Level}
+            <h2>{props.name}</h2>
+            <h5>{props.difficulty_Level}</h5>
+            <p>
             {props.time}
             {props.servings}
             {props.ingredients}
             {props.directions}
-          </p>
+            </p>
         </div>
-      </div>
+    </div>
     )
-  }
-  
-  export default Food
+}
+
+export default Food

@@ -9,7 +9,6 @@ const Foods = () => {
       try {
         const response = await axios.get('http://localhost:3001/fd/foods')
         setFoods(response.data.foods)
-        console.log(response.data)
       } catch (err) {
         console.log(err)
       }
@@ -26,6 +25,7 @@ const Foods = () => {
             key={food.id}
             name={food.name}
             difficulty_Level={food.difficulty_Level}
+            img={food.image}
           />
         ))}
       </section>
