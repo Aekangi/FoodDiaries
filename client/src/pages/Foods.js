@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import Food from '../Components/Food'
+import { Link } from 'react-router-dom'
 
 const Foods = () => {
   const [foods, setFoods] = useState([])
@@ -21,12 +22,14 @@ const Foods = () => {
       <h2>Food</h2>
       <section className="container-grid">
         {foods.map((food) => (
-          <Food
-            key={food.id}
-            name={food.name}
-            difficulty_Level={food.difficulty_Level}
-            img={food.image}
-          />
+          <Link to={`/foods/${food.id}`}>
+            <Food
+              key={food.id}
+              name={food.name}
+              difficulty_Level={food.difficulty_Level}
+              img={food.image}
+            />
+          </Link>
         ))}
       </section>
     </div>

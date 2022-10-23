@@ -1,15 +1,22 @@
 import axios from 'axios'
-import { useState } from 'react'
-const FoodInfo = () => {
+import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+
+const FoodInfo = (props) => {
+  let { id } = useParams()
   const [selectedFood, setSelectedFood] = useState(null)
   const [foodDetails, setFoodDetails] = useState(null)
 
-  const food = async () => {
-    const response = await axios.get(`localhost:3001/foods/${foods.id}`)
-
-    setSelectedFood(response.data)
+  const getFoodById = async () => {
+    const response = await axios.get(`http://localhost:3001/foods/${id}`)
+    setSelectedFood(response.data.name)
     setFoodDetails(response.data)
+    console.log(response.data)
   }
+
+  useEffect(() => {
+    getFoodById()
+  }, [id])
 }
 
 export default FoodInfo
