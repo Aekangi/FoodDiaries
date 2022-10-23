@@ -1,5 +1,6 @@
-const Food = (props) => {
 
+
+const Food = (props) => {
     return (
       <div className="card" onClick={props.onClick}>
         <div className="img-wrapper">
