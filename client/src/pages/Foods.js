@@ -5,15 +5,16 @@ import { Link } from 'react-router-dom'
 
 const Foods = () => {
   const [foods, setFoods] = useState([])
-  useEffect(() => {
-    const getFood = async () => {
-      try {
-        const response = await axios.get('http://localhost:3001/foods')
-        setFoods(response.data.foods)
-      } catch (err) {
-        console.log(err)
-      }
+
+  const getFood = async () => {
+    try {
+      const response = await axios.get('http://localhost:3001/foods')
+      setFoods(response.data.foods)
+    } catch (err) {
+      console.log(err)
     }
+  }
+  useEffect(() => {
     getFood()
   }, [])
 
@@ -22,12 +23,12 @@ const Foods = () => {
       <h2>Food</h2>
       <section className="container-grid">
         {foods.map((food) => (
-          <Link to={`/foods/${food.id}`}>
+          <Link to={`/foods/${food._id}`}>
             <Food
-              key={food.id}
+              key={food._id}
               name={food.name}
               difficulty_Level={food.difficulty_Level}
-              img={food.image}
+              image={food.image}
             />
           </Link>
         ))}
