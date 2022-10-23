@@ -7,7 +7,7 @@ const Foods = () => {
   useEffect(() => {
     const getFood = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/fd/foods')
+        const response = await axios.get('http://localhost:3001/foods')
         setFoods(response.data.foods)
       } catch (err) {
         console.log(err)

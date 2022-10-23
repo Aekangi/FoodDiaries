@@ -17,7 +17,7 @@ app.use(logger('dev'))
 app.use(cors())
 // app.use() middleware here ^ ///////////////////
 
-app.use('/fd', routes)
+app.use('/', routes)
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 

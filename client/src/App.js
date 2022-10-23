@@ -1,9 +1,10 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Header from './Components/Header'
-import Foods from './pages/Foods'
-import Mocktails from './pages/Mocktails'
 import Home from './pages/Home'
+import Foods from './pages/Foods'
+import FoodInfo from './pages/FoodInfo'
+import Mocktails from './pages/Mocktails'
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/fd/foods" element={<Foods />} />
-          <Route path="/fd/mocktails" element={<Mocktails />} />
+          <Route path="/foods" element={<Foods />} />
+          <Route path="/foods/:id" element={<FoodInfo />} />
+          <Route path="/mocktails" element={<Mocktails />} />
         </Routes>
       </main>
     </div>
