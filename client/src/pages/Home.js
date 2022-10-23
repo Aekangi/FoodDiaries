@@ -4,6 +4,7 @@ const Home = () => {
   return (
     <div>
       <h1>
+        Food Diaries
         <button>
           <Link to="/fd/foods">Food</Link>
         </button>
