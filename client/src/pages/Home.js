@@ -6,10 +6,10 @@ const Home = () => {
       <h1>Food Diaries</h1>
       <h1>
         <button>
-          <Link to="/fd/foods">Food</Link>
+          <Link to="/foods">Food</Link>
         </button>
         <button>
-          <Link to="/fd/foods">Mocktails</Link>
+          <Link to="/mocktails">Mocktails</Link>
         </button>
       </h1>
     </div>
