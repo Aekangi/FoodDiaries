@@ -34,6 +34,10 @@ const FoodForm = () => {
     axios.post('http://localhost3001/foods', formState)
     setFormState(initialForm)
   }
+
+  const handleChange = (e) => {
+    setFormState({ ...formState, [e.target.id]: e.target.value })
+  }
 }
 
 export default FoodForm
