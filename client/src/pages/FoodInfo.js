@@ -1,12 +1,11 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
-import { Navigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 const FoodInfo = () => {
   let { id } = useParams()
   const [foodDetails, setFoodDetails] = useState(null)
-  let navigate = useNavigate()
+
   useEffect(() => {
     const getFoodById = async () => {
       try {

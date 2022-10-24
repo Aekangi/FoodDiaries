@@ -28,6 +28,12 @@ const FoodForm = () => {
     }
     getFoods()
   }, [])
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    axios.post('http://localhost3001/foods', formState)
+    setFormState(initialForm)
+  }
 }
 
 export default FoodForm
