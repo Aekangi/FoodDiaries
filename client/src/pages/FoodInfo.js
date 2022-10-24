@@ -6,20 +6,20 @@ const FoodInfo = () => {
   let { id } = useParams()
   const [foodDetails, setFoodDetails] = useState(null)
 
-  const getFoodById = async () => {
-    try {
-      const response = await axios.get(`http://localhost:3001/foods/${id}`)
-
-      setFoodDetails(response.data)
-      console.log(response.data)
-    } catch (err) {
-      console.log(err)
-    }
-  }
-
   useEffect(() => {
+    const getFoodById = async () => {
+      try {
+        const response = await axios.get(`http://localhost:3001/foods/${id}`)
+
+        setFoodDetails(response.data.food)
+        console.log(response.data)
+      } catch (err) {
+        console.log(err)
+      }
+    }
+
     getFoodById()
-  }, [])
+  }, [id])
 
   return foodDetails ? (
     <div className="food-content">
@@ -27,7 +27,6 @@ const FoodInfo = () => {
       <section className="container-grid">
         <div>
           <img src={foodDetails.image} alt="" />
-          <h2>{foodDetails.name}</h2>
         </div>
       </section>
       <section className="details">
