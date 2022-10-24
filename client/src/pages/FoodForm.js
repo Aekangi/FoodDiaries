@@ -3,11 +3,11 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
 const FoodForm = () => {
-  const [recipe, setRecipe] = useState([])
+  const [recipes, setRecipe] = useState([])
   let navigate = useNavigate()
   const initialForm = {
-    image: '',
     name: '',
+    image: '',
     difficulty_Level: '',
     time: '',
     servings: '',
@@ -17,22 +17,21 @@ const FoodForm = () => {
 
   const [formState, setFormState] = useState(initialForm)
 
-  useEffect(() => {
-    const getFoods = async () => {
-      try {
-        let response = await axios.get('http://localhost:3001/foods')
-        setRecipe(response.data)
-        console.log(response.data)
-      } catch (err) {
-        console.log(err)
-      }
-    }
-    getFoods()
-  }, [])
+  //   useEffect(() => {
+  //     const getFoods = async () => {
+  //       try {
+  //         let response = await axios.get('http://localhost:3001/foods')
+  //         setRecipe(response.data)
+  //       } catch (err) {
+  //         console.log(err)
+  //       }
+  //     }
+  //     getFoods()
+  //   }, [])
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    axios.post('http://localhost3001/foods', formState)
+    axios.post('http://localhost:3001/foods', formState)
     setFormState(initialForm)
     navigate('/foods')
   }
@@ -74,6 +73,7 @@ const FoodForm = () => {
             value={formState.difficulty_Level}
             required
           >
+            <option value="Select">Select</option>
             <option value="Easy">Easy</option>
             <option value="Medium">Medium</option>
             <option value="Hard">Hard</option>
@@ -123,6 +123,17 @@ const FoodForm = () => {
           <button type="submit">Add Recipe</button>
         </div>
       </form>
+      {/* {recipes.map((recipe) => (
+        <div key={recipe._id}>
+          <h2>{recipe.name}</h2>
+          <p>{recipe.image}</p>
+          <h4>Difficulty Level: {recipe.type}</h4>
+          <h4>Time: {recipe.time}</h4>
+          <h4>Servings: {recipe.servings}</h4>
+          <h4>Ingredients:{recipe.ingredients}</h4>
+          <h4>Directions: {recipe.directions}</h4>
+        </div>
+      ))} */}
     </div>
   )
 }

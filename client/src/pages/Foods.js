@@ -23,9 +23,8 @@ const Foods = () => {
       <h2>Food</h2>
       <section className="container-grid">
         {foods.map((food) => (
-          <Link to={`/foods/${food._id}`}>
+          <Link key={food._id} to={`/foods/${food._id}`}>
             <Food
-              key={food._id}
               name={food.name}
               difficulty_Level={food.difficulty_Level}
               image={food.image}
