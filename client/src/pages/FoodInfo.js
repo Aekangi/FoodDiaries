@@ -1,11 +1,12 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 
 const FoodInfo = () => {
   let { id } = useParams()
   const [foodDetails, setFoodDetails] = useState(null)
-
+  let navigate = useNavigate()
   useEffect(() => {
     const getFoodById = async () => {
       try {
@@ -23,7 +24,7 @@ const FoodInfo = () => {
 
   return foodDetails ? (
     <div className="food-content">
-      <h2>Food</h2>
+      <h2>{foodDetails.name}</h2>
       <section className="container-grid">
         <div>
           <img src={foodDetails.image} alt="" />

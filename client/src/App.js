@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Foods from './pages/Foods'
 import FoodInfo from './pages/FoodInfo'
 import Mocktails from './pages/Mocktails'
+import FoodForm from './pages/FoodForm'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/foods" element={<Foods />} />
           <Route path="/foods/:id" element={<FoodInfo />} />
+          <Route path="/foods/foodForm" element={<FoodForm />} />
           <Route path="/mocktails" element={<Mocktails />} />
         </Routes>
       </main>
