@@ -4,7 +4,7 @@ const Food = (props) => {
     return (
     <div className="card" onClick={props.onClick}>
         <div className="img-wrapper">
-        <img src={props.image} />
+        <img src={props.image} alt='' />
         </div>
         <div className="info-wrapper flex-col">
             <h2>{props.name}</h2>
