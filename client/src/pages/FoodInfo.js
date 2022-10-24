@@ -10,9 +10,7 @@ const FoodInfo = () => {
     const getFoodById = async () => {
       try {
         const response = await axios.get(`http://localhost:3001/foods/${id}`)
-
         setFoodDetails(response.data.food)
-        console.log(response.data)
       } catch (err) {
         console.log(err)
       }

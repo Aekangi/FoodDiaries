@@ -1,9 +1,8 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
 const FoodForm = () => {
-  const [recipes, setRecipe] = useState([])
   let navigate = useNavigate()
   const initialForm = {
     name: '',
@@ -16,18 +15,6 @@ const FoodForm = () => {
   }
 
   const [formState, setFormState] = useState(initialForm)
-
-  //   useEffect(() => {
-  //     const getFoods = async () => {
-  //       try {
-  //         let response = await axios.get('http://localhost:3001/foods')
-  //         setRecipe(response.data)
-  //       } catch (err) {
-  //         console.log(err)
-  //       }
-  //     }
-  //     getFoods()
-  //   }, [])
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -123,17 +110,6 @@ const FoodForm = () => {
           <button type="submit">Add Recipe</button>
         </div>
       </form>
-      {/* {recipes.map((recipe) => (
-        <div key={recipe._id}>
-          <h2>{recipe.name}</h2>
-          <p>{recipe.image}</p>
-          <h4>Difficulty Level: {recipe.type}</h4>
-          <h4>Time: {recipe.time}</h4>
-          <h4>Servings: {recipe.servings}</h4>
-          <h4>Ingredients:{recipe.ingredients}</h4>
-          <h4>Directions: {recipe.directions}</h4>
-        </div>
-      ))} */}
     </div>
   )
 }
