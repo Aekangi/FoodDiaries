@@ -7,6 +7,7 @@ import FoodInfo from './pages/FoodInfo'
 import Mocktails from './pages/Mocktails'
 import FoodForm from './pages/FoodForm'
 import UpdateFood from './pages/UpdateFood'
+import MocktailInfo from './pages/MocktailInfo'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/foods/:id" element={<FoodInfo />} />
           <Route path="/foods/updateFood" element={<UpdateFood />} />
           <Route path="/mocktails" element={<Mocktails />} />
+          <Route path="/mocktails/:id" element={<MocktailInfo />} />
         </Routes>
       </main>
     </div>

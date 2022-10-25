@@ -19,7 +19,7 @@ const Mocktails = () => {
     getMocktail()
   }, [])
 
-  const deleteFoodEntry = async (id) => {
+  const deleteMocktailEntry = async (id) => {
     try {
       const response = await axios.delete(
         `http://localhost:3001/mocktails/${id}`
@@ -43,7 +43,7 @@ const Mocktails = () => {
                 image={mocktail.image}
               />
             </Link>
-            <button onClick={() => deleteFoodEntry(food._id)}>x</button>
+            <button onClick={() => deleteMocktailEntry(mocktail._id)}>x</button>
           </>
         ))}
       </section>
