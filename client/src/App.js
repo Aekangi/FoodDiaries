@@ -4,11 +4,12 @@ import Header from './Components/Header'
 import Home from './pages/Home'
 import Foods from './pages/Foods'
 import FoodInfo from './pages/FoodInfo'
-import Mocktails from './pages/Mocktails'
 import FoodForm from './pages/FoodForm'
 import UpdateFood from './pages/UpdateFood'
+import Mocktails from './pages/Mocktails'
 import MocktailInfo from './pages/MocktailInfo'
 import MocktailForm from './pages/MocktailForm'
+import UpdateMocktail from './pages/UpdateMocktail'
 
 function App() {
   return (
