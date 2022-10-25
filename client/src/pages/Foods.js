@@ -1,11 +1,9 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import Food from '../Components/Food'
-import { Link, useNavigate, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Foods = () => {
-  let navigate = useNavigate()
-  let location = useLocation()
   const [foods, setFoods] = useState([])
 
   const getFood = async () => {
@@ -44,6 +42,9 @@ const Foods = () => {
               />
             </Link>
             <button onClick={() => deleteFoodEntry(food._id)}>x</button>
+            <button>
+              <Link to={`/foods/updateFood/${food._id}`}>Update</Link>
+            </button>
           </>
         ))}
       </section>

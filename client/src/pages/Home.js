@@ -10,10 +10,10 @@ const Home = () => {
         the tradition going.
       </p>
       <h1>
-        <button>
+        <button className="leadToDiary">
           <Link to="/foods">Food Diary</Link>
         </button>
-        <button>
+        <button className="leadToDiary">
           <Link to="/mocktails">Mocktails Diary</Link>
         </button>
       </h1>
