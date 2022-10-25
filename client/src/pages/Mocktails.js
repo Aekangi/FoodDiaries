@@ -14,10 +14,22 @@ const Mocktails = () => {
     }
   }
 
+  useEffect(() => {
+    getMocktail()
+  }, [])
+
   return (
-    <div>
-      <h1>Mocktails</h1>
-    </div>
-  )
-}
+      <div className="foods">
+        <h2>Mocktails</h2>
+        <section className="container-grid">
+        {mocktails.map((mocktail) => (
+          <>
+            <Link key={mocktail._id} to={`/mocktails/${mocktail._id}`}>
+              <Mocktail
+                name={mocktail.name}
+                difficulty_Level={mocktail.difficulty_Level}
+                image={mocktail.image}
+              />
+            </Link>
+
 export default Mocktails
