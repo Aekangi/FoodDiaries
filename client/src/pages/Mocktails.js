@@ -35,8 +35,8 @@ const Mocktails = () => {
       <h2>Mocktails</h2>
       <section className="container-grid">
         {mocktails.map((mocktail) => (
-          <>
-            <Link key={mocktail._id} to={`/mocktails/${mocktail._id}`}>
+          <div key={mocktail._id}>
+            <Link to={`/mocktails/${mocktail._id}`}>
               <Mocktail
                 name={mocktail.name}
                 difficulty_Level={mocktail.difficulty_Level}
@@ -49,7 +49,7 @@ const Mocktails = () => {
                 Update
               </Link>
             </button>
-          </>
+          </div>
         ))}
       </section>
       <div>

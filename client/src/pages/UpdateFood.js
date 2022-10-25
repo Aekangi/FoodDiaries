@@ -22,7 +22,7 @@ const UpdateFood = () => {
     const getFoodById = async () => {
       try {
         const response = await axios.get(`http://localhost:3001/foods/${id}`)
-        setFoodState(response.data.foods)
+        setFoodState(response.data.food)
         console.log(response.data)
       } catch (err) {
         console.log(err)
@@ -30,7 +30,7 @@ const UpdateFood = () => {
     }
 
     getFoodById()
-  }, [id])
+  }, [])
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -45,7 +45,7 @@ const UpdateFood = () => {
 
   return (
     <div className="FoodForm">
-      <h1>Add a New Recipe</h1>
+      <h1>Update a Recipe</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Recipe Title</label>
