@@ -13,5 +13,14 @@ const MocktailForm = () => {
     ingredients: '',
     directions: ''
   }
+
+  const [formState, setFormState] = useState(initialForm)
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    axios.post('http://localhost:3001/mocktails', formState)
+    setFormState(initialForm)
+    navigate('/mocktails')
+  }
 }
 export default MocktailForm
