@@ -33,16 +33,16 @@ const Foods = () => {
       <section className="container-grid">
         {foods.map((food) => (
           <>
-            <Link key={food._id} to={`/foods/${food._id}`}>
+            <Link key={food?._id} to={`/foods/${food?._id}`}>
               <Food
-                name={food.name}
-                difficulty_Level={food.difficulty_Level}
-                image={food.image}
+                name={food?.name}
+                difficulty_Level={food?.difficulty_Level}
+                image={food?.image}
               />
             </Link>
-            <button onClick={() => deleteFoodEntry(food._id)}>x</button>
+            <button onClick={() => deleteFoodEntry(food?._id)}>x</button>
             <button>
-              <Link to={`/foods/updateFood/${food._id}`}>Update</Link>
+              <Link to={`/foods/updateFood/${food?._id}`}>Update</Link>
             </button>
           </>
         ))}

@@ -44,10 +44,19 @@ const Mocktails = () => {
               />
             </Link>
             <button onClick={() => deleteMocktailEntry(mocktail._id)}>x</button>
+            <button>
+              <Link to={`/mocktails/updateMocktail/${mocktail?._id}`}>
+                Update
+              </Link>
+            </button>
           </>
         ))}
       </section>
-      <div></div>
+      <div>
+        <button>
+          <Link to={'/mocktails/mocktailForm'}>Add a Recipe</Link>
+        </button>
+      </div>
     </div>
   )
 }

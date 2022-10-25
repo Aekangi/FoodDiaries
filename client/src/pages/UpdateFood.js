@@ -7,14 +7,6 @@ const UpdateFood = () => {
   let { id } = useParams()
   let navigate = useNavigate()
 
-  const [name, setName] = useState('')
-  const [image, setImage] = useState('')
-  const [difficulty_Level, setDifficulty_Level] = useState('')
-  const [time, setTime] = useState('')
-  const [servings, setServings] = useState('')
-  const [ingredients, setIngredients] = useState('')
-  const [directions, setDirections] = useState('')
-
   const initialForm = {
     name: '',
     image: '',
@@ -27,9 +19,9 @@ const UpdateFood = () => {
   const [foodState, setFoodState] = useState(initialForm)
 
   useEffect(() => {
-    const UpdateFoodById = async () => {
+    const getFoodById = async () => {
       try {
-        const response = await axios.put(`http://localhost:3001/foods/${id}`)
+        const response = await axios.get(`http://localhost:3001/foods/${id}`)
         setFoodState(response.data.foods)
         console.log(response.data)
       } catch (err) {
@@ -37,7 +29,7 @@ const UpdateFood = () => {
       }
     }
 
-    UpdateFoodById()
+    getFoodById()
   }, [id])
 
   const handleSubmit = (e) => {
@@ -48,14 +40,9 @@ const UpdateFood = () => {
   }
 
   const handleChange = (e) => {
-    setName({ name, [e.target.id]: e.target.value })
-    setImage({ image, [e.target.id]: e.target.value })
-    setDifficulty_Level({ difficulty_Level, [e.target.id]: e.target.value })
-    setTime({ time, [e.target.id]: e.target.value })
-    setServings({ servings, [e.target.id]: e.target.value })
-    setIngredients({ ingredients, [e.target.id]: e.target.value })
-    setDirections({ directions, [e.target.id]: e.target.value })
+    setFoodState({ ...foodState, [e.target.id]: e.target.value })
   }
+
   return (
     <div className="FoodForm">
       <h1>Add a New Recipe</h1>
@@ -66,7 +53,7 @@ const UpdateFood = () => {
             type="text"
             id="name"
             onChange={handleChange}
-            value={foodState.name}
+            value={foodState?.name}
             required
           ></input>
         </div>
@@ -76,7 +63,7 @@ const UpdateFood = () => {
             type="text"
             id="image"
             onChange={handleChange}
-            value={foodState.image}
+            value={foodState?.image}
             placeholder="image url"
             required
           ></input>
@@ -86,7 +73,7 @@ const UpdateFood = () => {
           <select
             id="difficulty_Level"
             onChange={handleChange}
-            value={foodState.difficulty_Level}
+            value={foodState?.difficulty_Level}
             required
           >
             <option value="Select">Select</option>
@@ -100,7 +87,7 @@ const UpdateFood = () => {
             type="text"
             id="time"
             onChange={handleChange}
-            value={foodState.time}
+            value={foodState?.time}
             required
           ></input>
 
@@ -109,7 +96,7 @@ const UpdateFood = () => {
             type="text"
             id="servings"
             onChange={handleChange}
-            value={foodState.servings}
+            value={foodState?.servings}
             required
           ></input>
         </div>
@@ -120,7 +107,7 @@ const UpdateFood = () => {
             cols="30"
             rows="10"
             onChange={handleChange}
-            value={foodState.ingredients}
+            value={foodState?.ingredients}
             required
           ></textarea>
         </div>
@@ -131,7 +118,7 @@ const UpdateFood = () => {
             cols="30"
             rows="10"
             onChange={handleChange}
-            value={foodState.directions}
+            value={foodState?.directions}
             required
           ></textarea>
         </div>

@@ -17,11 +17,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/foods" element={<Foods />} />
-          <Route path="/foods/foodForm" element={<FoodForm />} />
           <Route path="/foods/:id" element={<FoodInfo />} />
-          <Route path="/foods/updateFood" element={<UpdateFood />} />
+          <Route path="/foods/foodForm" element={<FoodForm />} />
+          <Route path="/foods/updateFood/:id" element={<UpdateFood />} />
           <Route path="/mocktails" element={<Mocktails />} />
           <Route path="/mocktails/:id" element={<MocktailInfo />} />
+          <Route path="/mocktails/mocktailForm" element={<FoodForm />} />
         </Routes>
       </main>
     </div>
