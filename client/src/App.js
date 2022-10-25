@@ -25,6 +25,10 @@ function App() {
           <Route path="/mocktails" element={<Mocktails />} />
           <Route path="/mocktails/:id" element={<MocktailInfo />} />
           <Route path="/mocktails/mocktailForm" element={<MocktailForm />} />
+          <Route
+            path="/mocktails/updateMocktail/:id"
+            element={<UpdateMocktail />}
+          />
         </Routes>
       </main>
     </div>
