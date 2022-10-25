@@ -31,7 +31,7 @@ const Mocktails = () => {
   }
 
   return (
-    <div className="foods">
+    <div className="mocktails">
       <h2>Mocktails</h2>
       <section className="container-grid">
         {mocktails.map((mocktail) => (
