@@ -21,7 +21,6 @@ const Foods = () => {
   const deleteFoodEntry = async (id) => {
     try {
       const response = await axios.delete(`http://localhost:3001/foods/${id}`)
-      console.log(response)
       getFood()
     } catch (err) {
       console.log(err)
