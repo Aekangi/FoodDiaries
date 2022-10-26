@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import Header from '../Components/Header'
 
 const FoodInfo = () => {
   let { id } = useParams()
@@ -21,15 +22,22 @@ const FoodInfo = () => {
 
   return foodDetails ? (
     <div className="food-content">
+      <header>
+        <Header />
+      </header>
       <h2>{foodDetails.name}</h2>
-      <section className="container-grid">
+      <section className="foodInfoImage">
         <div>
           <img src={foodDetails.image} alt="" />
         </div>
       </section>
       <section className="details">
-        <div className="flex-row space">
+        <div className="foodDetail">
+          <h5>{foodDetails.difficulty_Level}</h5>
+          <h5>Time: {foodDetails.time}</h5>
+          <h5>Servings: {foodDetails.servings}</h5>
           <p>{foodDetails.ingredients}</p>
+          <p>{foodDetails.directions}</p>
         </div>
       </section>
     </div>

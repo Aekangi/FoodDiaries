@@ -2,6 +2,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import Food from '../Components/Food'
 import { Link } from 'react-router-dom'
+import Header from '../Components/Header'
 
 const Foods = () => {
   const [foods, setFoods] = useState([])
@@ -21,7 +22,7 @@ const Foods = () => {
   const deleteFoodEntry = async (id) => {
     try {
       const response = await axios.delete(`http://localhost:3001/foods/${id}`)
-      getFood()
+      getFood(response)
     } catch (err) {
       console.log(err)
     }
@@ -29,10 +30,19 @@ const Foods = () => {
 
   return (
     <div className="foods">
+      <header>
+        <Header />
+      </header>
       <h2>Food</h2>
-      <section className="container-grid">
+      <section className="displayFood">
         {foods?.map((food) => (
-          <div key={food._id}>
+          <div className="foodCard" key={food._id}>
+            <button
+              className="delete"
+              onClick={() => deleteFoodEntry(food?._id)}
+            >
+              x
+            </button>
             <Link to={`/foods/${food._id}`}>
               <Food
                 name={food?.name}
@@ -40,7 +50,6 @@ const Foods = () => {
                 image={food?.image}
               />
             </Link>
-            <button onClick={() => deleteFoodEntry(food?._id)}>x</button>
             <button>
               <Link to={`/foods/updateFood/${food?._id}`}>Update</Link>
             </button>

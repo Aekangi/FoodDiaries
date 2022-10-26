@@ -1,4 +1,4 @@
-import './styles/App.css'
+import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Header from './Components/Header'
 import Home from './pages/Home'
@@ -14,7 +14,6 @@ import UpdateMocktail from './pages/UpdateMocktail'
 function App() {
   return (
     <div className="App">
-      <Header />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />

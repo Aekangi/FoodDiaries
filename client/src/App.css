@@ -1,0 +1,109 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  
+}
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 10%;
+background-color: rgb(193, 172, 215,.2);
+font-size: 20px;
+
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited { 
+  text-decoration: none; 
+  color: black;
+}
+
+.homePage{
+  
+}
+
+.leadToDiary{
+  display: block;
+  height: 100px;
+  width: 150px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.displayFood{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+  grid-gap: 1em;
+  justify-content: center;
+  
+}
+.displayMocktail{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+  grid-gap: 1em;
+  justify-content: center;
+}
+
+.foodCard img{
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+.mocktailCard img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+  
+}
+
+.delete {
+  justify-content: end;
+  background-color: rgb(211, 106, 106);
+  border: none;
+  margin-left: 50%;
+  border-radius: 5px;
+
+}
+
+
+

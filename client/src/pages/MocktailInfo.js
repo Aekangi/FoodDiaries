@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import Header from '../Components/Header'
 
 const MocktailInfo = () => {
   let { id } = useParams()
@@ -13,7 +14,6 @@ const MocktailInfo = () => {
           `http://localhost:3001/mocktails/${id}`
         )
         setMocktailDetails(response.data.mocktail)
-        console.log(response.data)
       } catch (err) {
         console.log(err)
       }
@@ -23,6 +23,9 @@ const MocktailInfo = () => {
   }, [id])
   return mocktailDetails ? (
     <div className="mocktail-content">
+      <header>
+        <Header />
+      </header>
       <h2>{mocktailDetails.name}</h2>
       <section className="container-grid">
         <div>
@@ -31,7 +34,11 @@ const MocktailInfo = () => {
       </section>
       <section className="details">
         <div className="flex-row space">
+          <h5>{mocktailDetails.difficulty_Level}</h5>
+          <h5>Time: {mocktailDetails.time}</h5>
+          <h5>Servings: {mocktailDetails.servings}</h5>
           <p>{mocktailDetails.ingredients}</p>
+          <p>{mocktailDetails.directions}</p>
         </div>
       </section>
     </div>

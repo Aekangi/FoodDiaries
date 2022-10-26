@@ -2,6 +2,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
+import Header from '../Components/Header'
 
 const UpdateMocktail = () => {
   let { id } = useParams()
@@ -33,7 +34,7 @@ const UpdateMocktail = () => {
     }
 
     getMocktailById()
-  }, [])
+  }, [id])
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -48,7 +49,10 @@ const UpdateMocktail = () => {
 
   return (
     <div className="mocktailForm">
-      <h1>Update a Recipe</h1>
+      <header>
+        <Header />
+      </header>
+      <h1>Update {mocktailState.name} Recipe</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Recipe Title</label>
@@ -126,7 +130,7 @@ const UpdateMocktail = () => {
           ></textarea>
         </div>
         <div>
-          <button type="submit">Add Recipe</button>
+          <button type="submit">Update Recipe</button>
         </div>
       </form>
     </div>

@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <div>
-      <h1>Food Diaries</h1>
+    <div className="homePage">
+      <h1 className="homeTitle">Food Diaries</h1>
       <p>
         Open a diary to view recipes that have been passing down from generation
         to generation. To keep the tradition going, please add a recipe and keep

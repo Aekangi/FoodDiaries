@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import Header from '../Components/Header'
 
 const MocktailForm = () => {
   let navigate = useNavigate()
@@ -29,6 +30,9 @@ const MocktailForm = () => {
 
   return (
     <div className="mocktailForm">
+      <header>
+        <Header />
+      </header>
       <h1>Add a New Mocktail Recipe</h1>
       <form onSubmit={handleSubmit}>
         <div>

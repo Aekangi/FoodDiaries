@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import Header from '../Components/Header'
 
 const FoodForm = () => {
   let navigate = useNavigate()
@@ -28,11 +29,14 @@ const FoodForm = () => {
   }
 
   return (
-    <div className="FoodForm">
-      <h1>Add a New Recipe</h1>
-      <form onSubmit={handleSubmit}>
+    <div>
+      <header>
+        <Header />
+      </header>
+      <h1 className="foodFormTitle">Add a New Recipe</h1>
+      <form className="foodForm" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Recipe Title</label>
+          <label htmlFor="name">Recipe Title:</label>
           <input
             type="text"
             id="name"
@@ -42,7 +46,7 @@ const FoodForm = () => {
           ></input>
         </div>
         <div>
-          <label htmlFor="image"></label>
+          <label htmlFor="image">Image url:</label>
           <input
             type="text"
             id="image"

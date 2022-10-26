@@ -2,6 +2,7 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Mocktail from '../Components/Mocktail'
+import Header from '../Components/Header'
 
 const Mocktails = () => {
   const [mocktails, setMocktails] = useState([])
@@ -24,7 +25,7 @@ const Mocktails = () => {
       const response = await axios.delete(
         `http://localhost:3001/mocktails/${id}`
       )
-      getMocktail()
+      getMocktail(response)
     } catch (err) {
       console.log(err)
     }
@@ -32,10 +33,19 @@ const Mocktails = () => {
 
   return (
     <div className="mocktails">
+      <header>
+        <Header />
+      </header>
       <h2>Mocktails</h2>
-      <section className="container-grid">
+      <section className="displayMocktail">
         {mocktails.map((mocktail) => (
-          <div key={mocktail._id}>
+          <div className="mocktailCard" key={mocktail._id}>
+            <button
+              className="delete"
+              onClick={() => deleteMocktailEntry(mocktail._id)}
+            >
+              x
+            </button>
             <Link to={`/mocktails/${mocktail._id}`}>
               <Mocktail
                 name={mocktail.name}
@@ -43,7 +53,6 @@ const Mocktails = () => {
                 image={mocktail.image}
               />
             </Link>
-            <button onClick={() => deleteMocktailEntry(mocktail._id)}>x</button>
             <button>
               <Link to={`/mocktails/updateMocktail/${mocktail?._id}`}>
                 Update

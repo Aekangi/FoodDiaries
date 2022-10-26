@@ -2,6 +2,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
+import Header from '../Components/Header'
 
 const UpdateFood = () => {
   let { id } = useParams()
@@ -30,7 +31,7 @@ const UpdateFood = () => {
     }
 
     getFoodById()
-  }, [])
+  }, [id])
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -44,11 +45,14 @@ const UpdateFood = () => {
   }
 
   return (
-    <div className="FoodForm">
-      <h1>Update a Recipe</h1>
-      <form onSubmit={handleSubmit}>
+    <div>
+      <header>
+        <Header />
+      </header>
+      <h1 className="foodFormTitle">Update {foodState.name} Recipe</h1>
+      <form className="foodForm" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Recipe Title</label>
+          <label htmlFor="name">Recipe Title: </label>
           <input
             type="text"
             id="name"
@@ -58,7 +62,7 @@ const UpdateFood = () => {
           ></input>
         </div>
         <div>
-          <label htmlFor="image"></label>
+          <label htmlFor="image">Image url: </label>
           <input
             type="text"
             id="image"
@@ -123,7 +127,7 @@ const UpdateFood = () => {
           ></textarea>
         </div>
         <div>
-          <button type="submit">Add Recipe</button>
+          <button type="submit">Update Recipe</button>
         </div>
       </form>
     </div>
