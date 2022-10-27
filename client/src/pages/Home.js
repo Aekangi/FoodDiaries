@@ -11,14 +11,16 @@ const Home = () => {
           recipe and keep the tradition going.
         </p>
       </div>
-      <h1>
-        <button className="leadToFood">
-          <Link to="/foods">Food Diary</Link>
-        </button>
-        <button className="leadToMock">
-          <Link to="/mocktails">Mocktails Diary</Link>
-        </button>
-      </h1>
+      <section className="diaryButtons">
+        <h1>
+          <button className="leadToFood">
+            <Link to="/foods">Food Diary</Link>
+          </button>
+          <button className="leadToMock">
+            <Link to="/mocktails">Mocktails Diary</Link>
+          </button>
+        </h1>
+      </section>
     </div>
   )
 }

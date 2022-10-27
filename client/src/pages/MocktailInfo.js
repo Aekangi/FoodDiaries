@@ -26,21 +26,29 @@ const MocktailInfo = () => {
       <header>
         <Header />
       </header>
-      <h2>{mocktailDetails.name}</h2>
-      <section className="mocktailInfoImage">
-        <div>
-          <img src={mocktailDetails.image} alt="" />
-        </div>
-      </section>
-      <section className="details">
-        <div className="flex-row space">
+      <div className="mocktailInfoPage">
+        <h2>{mocktailDetails.name}</h2>
+        <section className="mocktailInfoImage">
+          <div>
+            <img src={mocktailDetails.image} alt="" />
+          </div>
+        </section>
+        <section className="details">
           <h5>{mocktailDetails.difficulty_Level}</h5>
           <h5>Time: {mocktailDetails.time}</h5>
           <h5>Servings: {mocktailDetails.servings}</h5>
+        </section>
+        <section className="ingredients">
+          <h3>Ingredients:</h3>
           <p>{mocktailDetails.ingredients}</p>
+        </section>
+        <section className="directions">
+          <h3>
+            <p>Instructions:</p>
+          </h3>
           <p>{mocktailDetails.directions}</p>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   ) : (
     <div>'Hello'</div>
