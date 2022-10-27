@@ -4,12 +4,8 @@ const Home = () => {
   return (
     <div className="homePage">
       <div className="homeLeft">
-        <h1 className="homeTitle">Food Diaries</h1>
-        <p className="info">
-          Open a diary to view recipes that have been passing down from
-          generation to generation. To keep the tradition going, please add a
-          recipe and keep the tradition going.
-        </p>
+        <h1 className="homeTitle"></h1>
+        <p className="info"></p>
       </div>
       <section className="diaryButtons">
         <h1>

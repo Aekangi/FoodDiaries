@@ -19,7 +19,7 @@ const MocktailForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    axios.post('http://localhost:3001/mocktails', formState)
+    axios.post('/mocktails', formState)
     setFormState(initialForm)
     navigate('/mocktails')
   }

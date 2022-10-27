@@ -19,7 +19,7 @@ const FoodForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    axios.post('http://localhost:3001/foods', formState)
+    axios.post('/foods', formState)
     setFormState(initialForm)
     navigate('/foods')
   }

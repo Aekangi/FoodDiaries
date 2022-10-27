@@ -10,9 +10,7 @@ const MocktailInfo = () => {
   useEffect(() => {
     const getMocktailById = async () => {
       try {
-        const response = await axios.get(
-          `http://localhost:3001/mocktails/${id}`
-        )
+        const response = await axios.get(`/mocktails/${id}`)
         setMocktailDetails(response.data.mocktail)
       } catch (err) {
         console.log(err)

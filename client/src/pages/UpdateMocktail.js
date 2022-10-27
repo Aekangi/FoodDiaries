@@ -23,9 +23,7 @@ const UpdateMocktail = () => {
   useEffect(() => {
     const getMocktailById = async () => {
       try {
-        const response = await axios.get(
-          `http://localhost:3001/mocktails/${id}`
-        )
+        const response = await axios.get(`/mocktails/${id}`)
         setMocktailState(response.data.mocktail)
         console.log(response.data)
       } catch (err) {
@@ -38,7 +36,7 @@ const UpdateMocktail = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    axios.put(`http://localhost:3001/mocktails/${id}`, mocktailState)
+    axios.put(`/mocktails/${id}`, mocktailState)
     setMocktailState(initialForm)
     navigate('/mocktails')
   }
