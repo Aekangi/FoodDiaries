@@ -22,12 +22,12 @@ const MocktailInfo = () => {
     getMocktailById()
   }, [id])
   return mocktailDetails ? (
-    <div className="mocktail-content">
+    <div className="mocktailInfo">
       <header>
         <Header />
       </header>
       <h2>{mocktailDetails.name}</h2>
-      <section className="container-grid">
+      <section className="mocktailInfoImage">
         <div>
           <img src={mocktailDetails.image} alt="" />
         </div>

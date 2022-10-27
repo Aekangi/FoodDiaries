@@ -21,25 +21,36 @@ const FoodInfo = () => {
   }, [id])
 
   return foodDetails ? (
-    <div className="food-content">
+    <div className="foodInfo">
       <header>
         <Header />
       </header>
-      <h2>{foodDetails.name}</h2>
-      <section className="foodInfoImage">
-        <div>
-          <img src={foodDetails.image} alt="" />
-        </div>
-      </section>
-      <section className="details">
-        <div className="foodDetail">
+      <div className="foodInfoPage">
+        <h2>{foodDetails.name}</h2>
+        <section className="foodInfoImage">
+          <div>
+            <img src={foodDetails.image} alt="" />
+          </div>
+        </section>
+        <section className="details">
           <h5>{foodDetails.difficulty_Level}</h5>
           <h5>Time: {foodDetails.time}</h5>
           <h5>Servings: {foodDetails.servings}</h5>
+        </section>
+        <section className="ingredients">
+          <h3>
+            <p>Ingredients:</p>
+          </h3>
+
           <p>{foodDetails.ingredients}</p>
+        </section>
+        <section className="directions">
+          <h3>
+            <p>Instructions:</p>
+          </h3>
           <p>{foodDetails.directions}</p>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   ) : (
     <div>'Hello'</div>
