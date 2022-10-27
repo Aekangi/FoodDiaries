@@ -6,7 +6,7 @@ let dbUrl =
     : 'mongodb://127.0.0.1:27017/<database_name>'
 
 mongoose
-  .connect(MONGODB_URI)
+  .connect(dbUrl)
   .then(() => {
     console.log('Successfully connected.')
   })
