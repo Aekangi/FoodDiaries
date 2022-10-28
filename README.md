@@ -16,7 +16,7 @@ Here, I have created 1 food diary that has 2 different diaries combined. From th
 
 ## Preview of the App
 
-![](client/src/image/homepage.png)
+![](client/src/image/home.png)
 ![](client/src/image/foodPage.png)
 ![](client/src/image/addRECIPE.png)
 
