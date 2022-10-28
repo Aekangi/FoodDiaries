@@ -3,7 +3,6 @@
   text-align: center;
 }
 
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,7 +27,6 @@
   background-size: cover;
 }
 
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -47,13 +45,11 @@ a:link, a:visited {
 .homePage {
   display: flex;
   flex-direction: row;
-  background-color: yellow;
+
   height: 99vh;
-  background: url('./image/FoodDiary1.png') no-repeat center center fixed;
-  
+  background: url('./image/FoodDiary1.png');
+  background-size: 100vh;
   background-size: cover;
- 
- 
   }
 
 .homeLeft {
@@ -78,8 +74,6 @@ a:link, a:visited {
 .diaryButtons{
   margin: 120px 0;
 }
-
-
 
 .leadToFood{
   grid-column: 2/3;
@@ -125,7 +119,6 @@ a:link, a:visited {
   font-weight: 900;
 }
 
-
 .foodCard img, .mocktailCard img {
   width: 300px;
   height: 300px;
@@ -133,14 +126,12 @@ a:link, a:visited {
   
 }
 
-
 .delete {
   justify-content: end;
   background-color: rgb(211, 106, 106);
   border: none;
   margin-left: 50%;
-  border-radius: 5px;
-
+  border-radius: 5px;   
 }
 
 .foodInfoImage img, .mocktailInfoImage img{
@@ -158,7 +149,6 @@ a:link, a:visited {
 .foodInfoPage, .mocktailInfoPage {
   display: grid;
   grid-template-columns: 50% 50%;
- 
 }
 
 .foodInfoPage h2, .mocktailInfoPage h2 {
@@ -193,7 +183,6 @@ a:link, a:visited {
 
 .ingredients {
   grid-column: 2;
-  /* grid-row: 2; */
   text-shadow: 2px 2px 5px rgb(205, 162, 95);
   margin: -300px 80px 0 80px;
   font-size: 20px;
@@ -214,7 +203,6 @@ a:link, a:visited {
   font-weight: bold;
   font-family: 'Shadows Into Light', cursive;
 }
-
 
 .add {
   height: 40px0px;
@@ -264,5 +252,4 @@ input{
 .title {
   font-family: 'Shadows Into Light', cursive;
   font-size: 40px;
-  
 }
