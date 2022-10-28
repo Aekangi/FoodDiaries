@@ -45,13 +45,13 @@ const UpdateFood = () => {
   }
 
   return (
-    <div>
+    <div className="foodUpdate">
       <header>
         <Header />
       </header>
       <h1 className="foodFormTitle">Update {foodState.name} Recipe</h1>
       <form className="foodForm" onSubmit={handleSubmit}>
-        <div>
+        <div className="name">
           <label htmlFor="name">Recipe Title: </label>
           <input
             type="text"
@@ -61,7 +61,7 @@ const UpdateFood = () => {
             required
           ></input>
         </div>
-        <div>
+        <div className="image">
           <label htmlFor="image">Image url: </label>
           <input
             type="text"
@@ -72,7 +72,7 @@ const UpdateFood = () => {
             required
           ></input>
         </div>
-        <div>
+        <div className="dL">
           <label htmlFor="difficulty_Level">Difficulty level:</label>
           <select
             id="difficulty_Level"
@@ -104,7 +104,7 @@ const UpdateFood = () => {
             required
           ></input>
         </div>
-        <div>
+        <div className="ing">
           <label htmlFor="ingredients">Ingredients: </label>
           <textarea
             id="ingredients"
@@ -115,7 +115,7 @@ const UpdateFood = () => {
             required
           ></textarea>
         </div>
-        <div>
+        <div classname="dir">
           <label htmlFor="directions">Directions: </label>
           <textarea
             id="directions"
@@ -127,7 +127,9 @@ const UpdateFood = () => {
           ></textarea>
         </div>
         <div>
-          <button type="submit">Update Recipe</button>
+          <button className="up" type="submit">
+            Update Recipe
+          </button>
         </div>
       </form>
     </div>

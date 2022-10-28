@@ -52,7 +52,7 @@ const UpdateMocktail = () => {
       </header>
       <h1>Update {mocktailState.name} Recipe</h1>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className="name">
           <label htmlFor="name">Recipe Title</label>
           <input
             type="text"
@@ -62,7 +62,7 @@ const UpdateMocktail = () => {
             required
           ></input>
         </div>
-        <div>
+        <div className="image">
           <label htmlFor="image"></label>
           <input
             type="text"
@@ -73,7 +73,7 @@ const UpdateMocktail = () => {
             required
           ></input>
         </div>
-        <div>
+        <div className="dL">
           <label htmlFor="difficulty_Level">Difficulty level:</label>
           <select
             id="difficulty_Level"
@@ -105,7 +105,7 @@ const UpdateMocktail = () => {
             required
           ></input>
         </div>
-        <div>
+        <div className="ing">
           <label htmlFor="ingredients">Ingredients: </label>
           <textarea
             id="ingredients"
@@ -116,7 +116,7 @@ const UpdateMocktail = () => {
             required
           ></textarea>
         </div>
-        <div>
+        <div className="dir">
           <label htmlFor="directions">Directions: </label>
           <textarea
             id="directions"
@@ -128,7 +128,9 @@ const UpdateMocktail = () => {
           ></textarea>
         </div>
         <div>
-          <button type="submit">Update Recipe</button>
+          <button className="up" type="submit">
+            Update Recipe
+          </button>
         </div>
       </form>
     </div>

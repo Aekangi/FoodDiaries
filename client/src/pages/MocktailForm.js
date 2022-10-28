@@ -35,7 +35,7 @@ const MocktailForm = () => {
       </header>
       <h1 className="mocktailFormTitle">Add a New Mocktail Recipe</h1>
       <form classname="mocktailform" onSubmit={handleSubmit}>
-        <div>
+        <div className="name">
           <label htmlFor="name">Recipe Title:</label>
           <input
             type="text"
@@ -45,18 +45,17 @@ const MocktailForm = () => {
             required
           ></input>
         </div>
-        <div>
+        <div className="image">
           <label htmlFor="image">Image url: </label>
           <input
             type="text"
             id="image"
             onChange={handleChange}
             value={formState.image}
-            placeholder="image url"
             required
           ></input>
         </div>
-        <div>
+        <div className="dL">
           <label htmlFor="difficulty_Level">Difficulty level:</label>
           <select
             id="difficulty_Level"
@@ -88,7 +87,7 @@ const MocktailForm = () => {
             required
           ></input>
         </div>
-        <div>
+        <div className="ing">
           <label htmlFor="ingredients">Ingredients: </label>
           <textarea
             id="ingredients"
@@ -99,7 +98,7 @@ const MocktailForm = () => {
             required
           ></textarea>
         </div>
-        <div>
+        <div className="dir">
           <label htmlFor="directions">Directions: </label>
           <textarea
             id="directions"

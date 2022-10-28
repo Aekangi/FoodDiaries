@@ -34,7 +34,7 @@ const Mocktails = () => {
       <header>
         <Header />
       </header>
-      <h2>Mocktails</h2>
+      <h2 className="title">Mocktails</h2>
       <section className="displayMocktail">
         {mocktails.map((mocktail) => (
           <div className="mocktailCard" key={mocktail._id}>
@@ -51,7 +51,7 @@ const Mocktails = () => {
                 image={mocktail.image}
               />
             </Link>
-            <button>
+            <button className="update">
               <Link to={`/mocktails/updateMocktail/${mocktail?._id}`}>
                 Update
               </Link>
@@ -60,7 +60,7 @@ const Mocktails = () => {
         ))}
       </section>
       <div>
-        <button>
+        <button className="add">
           <Link to={'/mocktails/mocktailForm'}>Add a Recipe</Link>
         </button>
       </div>

@@ -48,9 +48,11 @@ a:link, a:visited {
   display: flex;
   flex-direction: row;
   background-color: yellow;
-  /* height: 99vh; */
+  height: 99vh;
   background-image: url('./image/FoodDiary1.png');
   background-size: cover;
+ 
+ 
   }
 
 .homeLeft {
@@ -83,11 +85,15 @@ a:link, a:visited {
   grid-row: 2/3;
   display: block;
   height: 80px;
-  width: 150px;
+  width: 250px;
   border-radius: 10px;
   margin: auto;
   font-size: 20px;
   margin-top: 30px;
+  background-color: rgb(161, 95, 29);
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 30px;
+
 }
 
 .leadToMock {
@@ -95,11 +101,14 @@ a:link, a:visited {
   grid-row: 3/4;
   display: block;
   height: 80px;
-  width: 150px;
+  width: 250px;
   border-radius: 10px;
   margin: auto;
   font-size: 20px;
   margin-top: 30px;
+  background-color: rgb(161, 95, 29);
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 30px;
 }
 
 .displayFood, .displayMocktail{
@@ -109,8 +118,10 @@ a:link, a:visited {
   grid-gap: 80px;
   justify-content: center;
   text-shadow: 2px 2px 5px rgb(205, 162, 95);
-  padding: 30px;
-  
+  padding: 50px;
+  font-family: 'Shadows Into Light', cursive;
+  font-size:20px ;
+  font-weight: 900;
 }
 
 
@@ -154,6 +165,7 @@ a:link, a:visited {
   grid-row: 1;
   text-shadow: 2px 2px 5px rgb(205, 162, 95);
   font-size: 40px;
+  font-family: 'Shadows Into Light', cursive;
   
 } 
 
@@ -170,6 +182,7 @@ a:link, a:visited {
   text-shadow: 2px 2px 5px rgb(205, 162, 95);
   margin-top: -10px;
   font-size: 15px;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 .directions h3 p {
@@ -183,11 +196,72 @@ a:link, a:visited {
   text-shadow: 2px 2px 5px rgb(205, 162, 95);
   margin: -300px 80px 0 80px;
   font-size: 20px;
+  font-family: 'Shadows Into Light', cursive;
 }
 .directions {
   grid-column: 1/3;
   text-shadow: 2px 2px 5px rgb(205, 162, 95);
   font-size: 20px;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.update {
+  background-color: rgb(231, 176, 151);
+  height: 30px;
+  width: 70px;
+  border-radius: 9px;
+  font-weight: bold;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 
+.add {
+  height: 40px0px;
+  width: 500px;
+  border-radius: 9px;
+  font-size: 30px;
+  margin-bottom: 25px;
+  background-color: rgb(150, 86, 65);
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.name, .image, .dL, .ing, .dir{
+  margin: 30px;
+  border-radius: 10px;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bold;
+}
+
+.mocktailFormTop, .mocktailForm, .foodFormTop, .foodUpdate {
+  background: url('https://i.etsystatic.com/5295659/r/il/f9e784/1855329930/il_1588xN.1855329930_qdib.jpg');
+  background-size: cover;
+  height: 110vh;
+}
+input, textarea, select{
+  border-radius: 10px;
+  background-color: rgb(235, 219, 211);
+}
+input{
+  width: 150px;
+}
+
+.submit, .up {
+  border-radius: 10px;
+  background-color: rgb(235, 219, 211);
+  height: 70px;
+  width: 300px;
+  margin-top: 30px;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 40px;
+}
+.mocktailFormTitle, .foodFormTitle {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 50px;
+  margin-top: -5px;
+
+}
+.title {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 40px;
+  
+}

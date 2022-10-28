@@ -94,7 +94,7 @@ const main = async () => {
       time: '25 mins',
       servings: '8 servings',
       ingredients:
-        '1/4 cup vegetable broth, 3 tbsp soy sauce, 2 tbsp brown sugar, 1 tbsp sesame oil',
+        '1/4 cup vegetable broth, 3 tbsp soy sauce, 2 tbsp brown sugar, 1 tbsp sesame oil, 8 oz lo mein noodles, 1 large carrot, 1 cup broccoli chopped, 1 large red bell pepper, 1 medium onion, 4 garlic cloves',
       directions:
         '8 oz lo mein noodles (cooked according to package instructions), 1 large carrot julienne, 1 cup broccoli chopped, 1 large red bell pepper sliced, 1 medium onion sliced, 4 garlic cloves, 1 tbsp oil for frying',
       image:

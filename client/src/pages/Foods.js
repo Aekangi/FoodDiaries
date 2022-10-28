@@ -33,7 +33,7 @@ const Foods = () => {
       <header>
         <Header />
       </header>
-      <h2>Food</h2>
+      <h2 className="title">Dinner Entrees</h2>
       <section className="displayFood">
         {foods?.map((food) => (
           <div className="foodCard" key={food._id}>
@@ -50,14 +50,14 @@ const Foods = () => {
                 image={food?.image}
               />
             </Link>
-            <button>
+            <button className="update">
               <Link to={`/foods/updateFood/${food?._id}`}>Update</Link>
             </button>
           </div>
         ))}
       </section>
       <div>
-        <button>
+        <button className="add">
           <Link to={'/foods/foodForm'}>Add a Recipe</Link>
         </button>
       </div>
