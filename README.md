@@ -1,4 +1,6 @@
-# Food Diaries
+# Food Diary
+
+## By: Aekangi Patel
 
 [Facebook](http://www.instaa.com)
 [Instagram](http://www.instaa.com)
@@ -6,7 +8,17 @@
 
 ## Description
 
-I've created a food application that has 2 different sections. One section will lead to multiple different food images that are clickable. Once clicked, you will see the recipes difficulty level, ingredients needed for the recipe, and a list of directions on how to make the recipe. The other section will be the same except it will portray mocktail images with the recipe of that mocktail. If a follower lands on a recipe that they feel needs to be altered, there will be a tab to update the recipe.
+Here, I have created 1 food diary that has 2 different diaries combined. From the homepage, you have access to both: the Dinner Diary and the Mocktail Diary. Both diaries will lead you to wonderful recipes that when clicked, will show you all the recipe information. Through the app, I have bulit multiple features: you are able to add a recipe, update the recipe or just simply delete a recipe if you dislike it! To create this project, I have used multiple different technologies such as, Mongoose, Express, React, Node and more.
+
+## Let's check out the app
+
+[Food Diary](https://fooddiary82.herokuapp.com/)
+
+## Preview of the App
+
+![](client/src/image/homepage.png)
+![](client/src/image/foodPage.png)
+![](client/src/image/addRECIPE.png)
 
 ## Component Hierarchy Diagram
 
@@ -15,6 +27,16 @@ I've created a food application that has 2 different sections. One section will 
 ## Entity Relationship Diagram
 
 ![](DiagramsIMG/FoodDiariesERDChartt.png)
+
+## Upcoming Features
+
+At sometime in the near future, I plan to upgrade this app and add multiple features. As of right now, some of the features I plan to incorporate are:
+-Search Bar
+-Appetizer Diary
+-Dessert Diary
+-feedback page
+
+There are so many ideas that I have for this app, the list would just be too long.
 
 ## Trello Link
 

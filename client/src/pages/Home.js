@@ -10,7 +10,7 @@ const Home = () => {
       <section className="diaryButtons">
         <h1>
           <button className="leadToFood">
-            <Link to="/foods">Food Diary</Link>
+            <Link to="/foods">Dinner Diary</Link>
           </button>
           <button className="leadToMock">
             <Link to="/mocktails">Mocktails Diary</Link>
