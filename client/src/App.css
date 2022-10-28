@@ -48,7 +48,7 @@ a:link, a:visited {
   display: flex;
   flex-direction: row;
   background-color: yellow;
-  height: 99vh;
+  /* height: 99vh; */
   background-image: url('./image/FoodDiary1.png');
   background-size: cover;
   }

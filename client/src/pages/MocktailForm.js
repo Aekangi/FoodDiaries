@@ -29,14 +29,14 @@ const MocktailForm = () => {
   }
 
   return (
-    <div className="mocktailForm">
+    <div className="mocktailFormTop">
       <header>
         <Header />
       </header>
-      <h1>Add a New Mocktail Recipe</h1>
-      <form onSubmit={handleSubmit}>
+      <h1 className="mocktailFormTitle">Add a New Mocktail Recipe</h1>
+      <form classname="mocktailform" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Recipe Title</label>
+          <label htmlFor="name">Recipe Title:</label>
           <input
             type="text"
             id="name"
@@ -46,7 +46,7 @@ const MocktailForm = () => {
           ></input>
         </div>
         <div>
-          <label htmlFor="image"></label>
+          <label htmlFor="image">Image url: </label>
           <input
             type="text"
             id="image"
@@ -111,7 +111,9 @@ const MocktailForm = () => {
           ></textarea>
         </div>
         <div>
-          <button type="submit">Add Recipe</button>
+          <button className="submit" type="submit">
+            Add Recipe
+          </button>
         </div>
       </form>
     </div>
