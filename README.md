@@ -31,10 +31,11 @@ Here, I have created 1 food diary that has 2 different diaries combined. From th
 ## Upcoming Features
 
 At sometime in the near future, I plan to upgrade this app and add multiple features. As of right now, some of the features I plan to incorporate are:
--Search Bar
--Appetizer Diary
--Dessert Diary
--feedback page
+
+- Search Bar
+- Appetizer Diary
+- Dessert Diary
+- feedback page
 
 There are so many ideas that I have for this app, the list would just be too long.
 
