@@ -22,7 +22,7 @@ const Foods = () => {
   const deleteFoodEntry = async (id) => {
     try {
       const response = await axios.delete(`/api/foods/${id}`)
-      getFood(response)
+      getFood()
     } catch (err) {
       console.log(err)
     }
