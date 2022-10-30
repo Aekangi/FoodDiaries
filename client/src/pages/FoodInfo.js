@@ -10,7 +10,7 @@ const FoodInfo = () => {
   useEffect(() => {
     const getFoodById = async () => {
       try {
-        const response = await axios.get(`/foods/${id}`)
+        const response = await axios.get(`/api/foods/${id}`)
         setFoodDetails(response.data.food)
       } catch (err) {
         console.log(err)

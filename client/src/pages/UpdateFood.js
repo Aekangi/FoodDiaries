@@ -22,7 +22,7 @@ const UpdateFood = () => {
   useEffect(() => {
     const getFoodById = async () => {
       try {
-        const response = await axios.get(`/foods/${id}`)
+        const response = await axios.get(`/api/foods/${id}`)
         setFoodState(response.data.food)
         console.log(response.data)
       } catch (err) {
@@ -35,7 +35,7 @@ const UpdateFood = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    axios.put(`/foods/${id}`, foodState)
+    axios.put(`/api/foods/${id}`, foodState)
     setFoodState(initialForm)
     navigate('/foods')
   }

@@ -9,7 +9,7 @@ const Foods = () => {
 
   const getFood = async () => {
     try {
-      const response = await axios.get('/foods')
+      const response = await axios.get('api/foods')
       setFoods(response.data.foods)
     } catch (err) {
       console.log(err)
