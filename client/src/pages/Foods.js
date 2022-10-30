@@ -9,7 +9,7 @@ const Foods = () => {
 
   const getFood = async () => {
     try {
-      const response = await axios.get('api/foods')
+      const response = await axios.get('/api/foods')
       setFoods(response.data.foods)
     } catch (err) {
       console.log(err)
@@ -21,7 +21,7 @@ const Foods = () => {
 
   const deleteFoodEntry = async (id) => {
     try {
-      const response = await axios.delete(`/foods/${id}`)
+      const response = await axios.delete(`/api/foods/${id}`)
       getFood(response)
     } catch (err) {
       console.log(err)
