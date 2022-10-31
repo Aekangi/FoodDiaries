@@ -9,7 +9,7 @@ const Mocktails = () => {
 
   const getMocktail = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/mocktails')
+      const response = await axios.get('/api/mocktails')
       setMocktails(response.data.mocktails)
     } catch (err) {
       console.log(err)
@@ -22,7 +22,7 @@ const Mocktails = () => {
 
   const deleteMocktailEntry = async (id) => {
     try {
-      const response = await axios.delete(`/mocktails/${id}`)
+      const response = await axios.delete(`/api/mocktails/${id}`)
       getMocktail(response)
     } catch (err) {
       console.log(err)

@@ -23,7 +23,7 @@ const UpdateMocktail = () => {
   useEffect(() => {
     const getMocktailById = async () => {
       try {
-        const response = await axios.get(`/mocktails/${id}`)
+        const response = await axios.get(`/api/mocktails/${id}`)
         setMocktailState(response.data.mocktail)
         console.log(response.data)
       } catch (err) {
