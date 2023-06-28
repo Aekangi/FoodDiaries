@@ -68,7 +68,6 @@ const FoodForm = () => {
             <option value="Medium">Medium</option>
             <option value="Hard">Hard</option>
           </select>
-
           <label htmlFor="time">Time: </label>
           <input
             type="text"
@@ -77,7 +76,6 @@ const FoodForm = () => {
             value={formState.time}
             required
           ></input>
-
           <label htmlFor="servings">Servings: </label>
           <input
             type="text"
