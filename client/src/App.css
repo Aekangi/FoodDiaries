@@ -241,16 +241,33 @@ a:visited {
 .mocktailForm,
 .foodFormTop,
 .foodUpdate {
-  background: url('https://i.etsystatic.com/5295659/r/il/f9e784/1855329930/il_1588xN.1855329930_qdib.jpg');
-  background-size: cover;
-  height: 110vh;
+  /* background-image: url("./image/foodbackground.jpeg"); */
+  background-color: rgb(221, 221, 219);
+  height: 95vh;
+  margin-top: 52px;
+}
+
+.foodFormTitle,
+.mocktailFormTitle {
+  background-color: #b2c7b2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.foodFormTitle span,
+.mocktailFormTitle span {
+  font-size: 1.5em;
 }
 
 input,
 textarea,
 select {
   border-radius: 10px;
-  background-color: rgb(235, 219, 211);
+  background-color: transparent
 }
 
 input {
@@ -260,7 +277,7 @@ input {
 .submit,
 .up {
   border-radius: 10px;
-  background-color: rgb(235, 219, 211);
+  background-color: transparent;
   height: 70px;
   width: 300px;
   margin-top: 30px;

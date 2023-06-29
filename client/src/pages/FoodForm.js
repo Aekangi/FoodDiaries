@@ -33,7 +33,7 @@ const FoodForm = () => {
       <header>
         <Header />
       </header>
-      <h1 className="foodFormTitle">Add a New Recipe</h1>
+      <h1 className="foodFormTitle"><span>Add a New Food Recipe</span></h1>
       <form className="foodForm" onSubmit={handleSubmit}>
         <div className="name">
           <label htmlFor="name">Recipe Title: </label>

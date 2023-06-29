@@ -33,7 +33,7 @@ const MocktailForm = () => {
       <header>
         <Header />
       </header>
-      <h1 className="mocktailFormTitle">Add a New Mocktail Recipe</h1>
+      <h1 className="mocktailFormTitle"><span>Add a New Mocktail Recipe</span></h1>
       <form classname="mocktailform" onSubmit={handleSubmit}>
         <div className="name">
           <label htmlFor="name">Recipe Title:</label>
