@@ -106,8 +106,8 @@ a:visited {
 
 .foodCard img,
 .mocktailCard img {
-  width: 550px;
-  height: 400px;
+  width: 350px;
+  height: 250px;
   border-radius: 10px;
 
 }
