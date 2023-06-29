@@ -26,7 +26,7 @@ const FoodInfo = () => {
         <Header />
       </header>
       <div className="foodInfoPage">
-        <h2>{foodDetails.name}</h2>
+        <h2><span>{foodDetails.name}</span></h2>
         <section className="foodInfoImage">
           <div>
             <img src={foodDetails.image} alt="" />

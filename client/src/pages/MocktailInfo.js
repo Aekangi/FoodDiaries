@@ -25,7 +25,7 @@ const MocktailInfo = () => {
         <Header />
       </header>
       <div className="mocktailInfoPage">
-        <h2>{mocktailDetails.name}</h2>
+        <h2><span>{mocktailDetails.name}</span></h2>
         <section className="mocktailInfoImage">
           <div>
             <img src={mocktailDetails.image} alt="" />

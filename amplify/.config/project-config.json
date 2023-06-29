@@ -1,0 +1,17 @@
+{
+  "providers": [
+    "awscloudformation"
+  ],
+  "projectName": "FoodDiaries",
+  "version": "3.1",
+  "frontend": "javascript",
+  "javascript": {
+    "framework": "react",
+    "config": {
+      "SourceDir": "https://main.d2f39vt2ouipo0.amplifyapp.com/",
+      "DistributionDir": "build",
+      "BuildCommand": "npm run dev",
+      "StartCommand": "npm run start"
+    }
+  }
+}

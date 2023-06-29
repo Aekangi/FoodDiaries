@@ -33,7 +33,7 @@ const Foods = () => {
       <header>
         <Header />
       </header>
-      <h2 className="title">Dinner Entrees</h2>
+      <h2 className="title"><span>Dinner Entrees</span></h2>
       <section className="displayFood">
         {foods?.map((food) => (
           <div className="foodCard" key={food._id}>

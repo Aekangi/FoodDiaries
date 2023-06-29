@@ -34,7 +34,7 @@ const Mocktails = () => {
       <header>
         <Header />
       </header>
-      <h2 className="title">Mocktails</h2>
+      <h2 className="title"><span>Mocktails</span></h2>
       <section className="displayMocktail">
         {mocktails.map((mocktail) => (
           <div className="mocktailCard" key={mocktail._id}>
