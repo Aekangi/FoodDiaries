@@ -50,7 +50,7 @@ const UpdateMocktail = () => {
       <header>
         <Header />
       </header>
-      <h1>Update {mocktailState.name} Recipe</h1>
+      <h1 className="MocktailFormTitle"><span>Update {mocktailState.name} Recipe</span> </h1>
       <form onSubmit={handleSubmit}>
         <div className="name">
           <label htmlFor="name">Recipe Title</label>
