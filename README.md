@@ -8,7 +8,7 @@
 
 ## Description
 
-Here, I have created 1 food diary that has 2 different diaries combined. From the homepage, you have access to both: the Dinner Diary and the Mocktail Diary. Both diaries will lead you to wonderful recipes that when clicked, will show you all the recipe information. Through the app, I have bulit multiple features: you are able to add a recipe, update the recipe or just simply delete a recipe if you dislike it! To create this project, I have used multiple different technologies such as, Mongoose, Express, React, Node and more.
+Introducing Food Diary, the ultimate culinary companion app that brings together the art of food recipes and the creativity of mocktail recipes in one convenient platform. Food Diary is your go-to app for all things gastronomic, inspiring you to explore, create, and savor delicious meals and refreshing mocktails like never before. Whether you're a food enthusiast looking to expand your culinary repertoire or a non-alcoholic beverage lover seeking new and exciting mocktail creations, Food Diary is your virtual kitchen companion. Immerse yourself in a world of flavors, textures, and aromas as you embark on a culinary adventure, experimenting with tantalizing food and mocktail recipes that will awaken your senses and elevate your dining experiences. Let Food Diary be your guide on this delicious journey of exploration and enjoyment.
 
 ## Let's check out the app
 
