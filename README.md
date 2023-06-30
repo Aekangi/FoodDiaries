@@ -16,9 +16,9 @@ Here, I have created 1 food diary that has 2 different diaries combined. From th
 
 ## Preview of the App
 
-![](client/src/image/home.png)
-![](client/src/image/foodPage.png)
-![](client/src/image/addRECIPE.png)
+![](client/src/image/HomePage.png)
+![](client/src/image/entreePage.png)
+![](client/src/image/addMocktail.png)
 
 ## Component Hierarchy Diagram
 
